@@ -1,0 +1,109 @@
+:root {
+  --mainbackground: hsl(222, 26%, 31%);
+  --keypadbackground: hsl(223, 31%, 20%);
+  --brightCyan: hsl(224, 36%, 15%);
+  --keybackground: hsl(225, 21%, 49%);
+  --keyshadow: hsl(224, 28%, 35%);
+  --grayishblue: hsl(221, 14%, 31%);
+  --White: hsl(0, 0%, 100%);
+  --redkeybackground: hsl(6, 63%, 50%);
+  --darkredkeyshadow: hsl(6, 70%, 34%);
+  --lightkeybackground: hsl(30, 25%, 89%);
+  --lightkeybackgroundshadow: hsl(28, 16%, 65%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan";
+  transition: 0.3s ease;
+  background: var(--mainbackground);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.SectionDiv {
+  height: 35rem;
+  width: 25rem;
+  padding: 0.5rem;
+}
+
+.heading {
+  color: var(--White);
+  &:hover {
+    cursor: auto;
+  }
+}
+
+.input {
+  background: var(--brightCyan);
+  border: none;
+  font-size: 34px;
+  color: white;
+  width: 24rem;
+  height: 6rem;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+  padding: 1rem;
+
+  &:hover {
+    cursor: auto;
+  }
+}
+
+.ButtonSection {
+  background: var(--keypadbackground);
+  width: 24rem;
+  height: 23rem;
+  border-radius: 0.4rem;
+  border: 1px solid;
+  border-color: var(--keypadbackground);
+  margin-top: 1rem;
+}
+
+.ButtonContainer {
+  /* border: 1px solid red; */
+  width: 22rem;
+  height: 3.5rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background: var(--keypadbackground);
+}
+
+.button {
+  background: var(--lightkeybackground);
+  height: 3rem;
+  width: 5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  &:hover {
+    cursor: pointer;
+    background: var(--White);
+  }
+}
+.delete {
+  background-color: var(--keyshadow);
+  color: var(--White);
+  &:hover {
+    background: var(--keybackground);
+  }
+}
+.reset {
+  width: 10.5rem;
+}
+.equal {
+  background: var(--darkredkeyshadow);
+  width: 10.5rem;
+  &:hover {
+    background: var(--redkeybackground);
+  }
+}
